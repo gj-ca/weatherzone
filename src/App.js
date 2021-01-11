@@ -34,7 +34,7 @@ class App extends React.Component {
         let promises = []
         let currentState = this.state
         cityNames.forEach(city => {
-            promises.push(fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=ec692f60a6cfe8da1f90c90c083625af`)
+            promises.push(fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c9e9f0c6281ee561993216a0936945a4`)
                 .then(foo => foo.json())
                 .then(result => {
                     let newCity = {}
